@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  nodejstokengenerator:
+    image: nodejstokengenerator
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:8080
+    restart: always
+    volumes:
+      - .:/usr/src/app
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:4.4.6
+    ports:
+      - 27017:27017
+    restart: always
+    volumes:
+      - data:/data/db
+  ganache:
+    image: ganache-local
+    build:
+      context: ganache
+    env_file: ganache/.env.local
+    ports:
+      - "8545:8545"
+volumes:
+  data:

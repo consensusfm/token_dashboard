@@ -1,0 +1,6 @@
+node_modules
+appconfig.json
+ganache/.env
+front-end-react/node_modules/
+
+.idea

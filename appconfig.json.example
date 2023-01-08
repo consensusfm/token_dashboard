@@ -1,0 +1,11 @@
+{
+    "addressToMint": null,
+    "privateKeyToDeploy": null,
+    "etherscanApiKey": null,
+    "providerUrl": null,
+    "testPrivateKey1": null,
+    "testPrivateKey2": null,
+    "testPrivateKey3": null,
+    "jwtKey": null,
+    "salt": null
+}
