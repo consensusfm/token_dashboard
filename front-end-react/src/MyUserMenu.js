@@ -6,8 +6,8 @@ import ExitIcon from '@mui/icons-material/PowerSettingsNew';
 import { MenuItem, createTheme } from '@mui/material';
 import { IconButton, Tooltip } from '@mui/material';
 import LanIcon from '@mui/icons-material/Lan';
-import { ethers } from 'ethers';
 
+// New dark theme
 const darkTheme = createTheme({
   palette: { mode: 'dark' },
 });
